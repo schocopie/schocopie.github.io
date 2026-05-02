@@ -18,11 +18,9 @@
       <a href="#top" class="brand">정다정</a>
       <nav class="nav" aria-label="primary">
         <a href="#top" class="active">HOME</a>
-        <a href="#about">WHAT I DO</a>
         <a href="#experience">CAREER</a>
         <a href="#speaking">SPEAKING</a>
-        <a href="#writing">BOOKS &amp; COLUMNS</a>
-        <a href="#hosting">CONVERSATIONS</a>
+        <a href="#writing">BOOKS / COLUMNS / COMMUNITY</a>
         <a href="#coaching">COACHING</a>
         <a href="#contact">CONTACT</a>
       </nav>
@@ -70,10 +68,10 @@
         <h2 class="banner-title">Career</h2>
       </div>
     </section>
-    <section class="block">
+    <section class="block career-block">
       <div class="container">
-        <p class="section-statement">
-          글로벌 브랜드와 함께,<br />메시지와 평판을 설계해 왔습니다
+        <p class="section-statement career-statement">
+          글로벌 브랜드와 함께, 메시지와 평판을 설계해 왔습니다
         </p>
         <ol class="exp-list">
           <li>
@@ -154,7 +152,7 @@
     <!-- ======== WRITING BANNER ======== -->
     <section id="writing" class="banner">
       <div class="container">
-        <h2 class="banner-title">Books &amp; Columns</h2>
+        <h2 class="banner-title">Books · Columns · Community</h2>
       </div>
     </section>
     <section class="block block-light writing-block">
@@ -232,43 +230,17 @@
             </ul>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ======== CONVERSATIONS BANNER ======== -->
-    <section id="hosting" class="banner">
-      <div class="container">
-        <h2 class="banner-title">Conversations</h2>
-      </div>
-    </section>
-    <section class="block">
-      <div class="container">
-        <p class="section-statement">
-          책과 사람, 생각이 만나는<br />자리를 만듭니다
-        </p>
-        <div class="hosting-grid">
-          <article class="hosting-item">
-            <p class="hosting-tag">Reading Club</p>
-            <h3 class="hosting-title">트레바리 〈중간관리자의 리더십〉</h3>
-            <p class="hosting-meta">클럽장 · 2024년 5월 ~ 현재</p>
-            <p class="hosting-desc">
-              팀과 조직 사이에서 균형을 잡는 매니저들이 모여,
-              책을 읽고 자신의 질문을 다시 정리하는 자리.
-              한 시즌마다 ‘무엇을 다르게 해 볼 것인가’를 함께 만듭니다.
-            </p>
-            <p class="hosting-link"><a href="https://m.trevari.co.kr/product/835c6f83-2b23-473d-8ceb-143475cdb5ed" target="_blank" rel="noopener">트레바리에서 보기 →</a></p>
-          </article>
-          <article class="hosting-item">
-            <p class="hosting-tag">Podcast</p>
-            <h3 class="hosting-title">네이버 오디오클립 〈별별명언〉</h3>
-            <p class="hosting-meta">진행 · 김동훈 작가의 콘텐츠 기반</p>
-            <p class="hosting-desc">
-              서양 고전 21편의 사유와 명언을 매개로,
-              지금 우리에게 필요한 한 줄의 통찰을
-              대화로 풀어낸 오디오 프로그램의 진행자로 참여했습니다.
-            </p>
-          </article>
-        </div>
+        <ul class="community-list">
+          <li>
+            <span class="community-tag">Reading Club</span>
+            <a href="https://m.trevari.co.kr/product/835c6f83-2b23-473d-8ceb-143475cdb5ed" target="_blank" rel="noopener">트레바리 · 중간관리자의 리더십 →</a>
+          </li>
+          <li>
+            <span class="community-tag">Podcast</span>
+            <span class="community-text">네이버 오디오클립 · 별별명언 (서비스 종료)</span>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -355,7 +327,7 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // Active nav state on scroll
-    const sections = ['about','experience','speaking','writing','hosting','coaching','contact'];
+    const sections = ['experience','speaking','writing','coaching','contact'];
     const links = Object.fromEntries(
       [...sections, 'top'].map(id => [id, document.querySelector(`.nav a[href="#${id}"]`)])
     );
