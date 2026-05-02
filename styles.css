@@ -259,14 +259,14 @@ strong { font-weight: 600; color: var(--ink); }
 }
 .pillar {
   background: #fff;
-  border: 1px solid var(--line);
+  border: 2px solid #ffd0b3;
   border-radius: 12px;
   padding: 38px 30px 34px;
   transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
 }
 .pillar:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 8px 20px rgba(255,106,0,0.12);
   border-color: var(--accent);
 }
 .pillar-tag {
@@ -307,34 +307,29 @@ strong { font-weight: 600; color: var(--ink); }
 }
 .question-list li {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 16px 14px;
-  border: 1px solid var(--line);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 22px 12px;
+  border: 2px solid #ffd0b3;
   border-radius: 12px;
   background: #fff;
   transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
 }
 .question-list li:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 8px 20px rgba(255,106,0,0.12);
   border-color: var(--accent);
-}
-.q-num {
-  font-family: var(--font-en);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  color: var(--accent);
 }
 .q-title {
   font-family: var(--font);
   font-weight: 700;
-  font-size: clamp(15px, 1.1vw, 17px);
-  letter-spacing: -0.012em;
+  font-size: clamp(14px, 1.05vw, 16px);
+  letter-spacing: -0.018em;
   color: var(--ink);
   line-height: 1.4;
   transition: color .18s ease;
+  word-break: keep-all;
 }
 .question-list li:hover .q-title { color: var(--accent); }
 
@@ -365,7 +360,7 @@ strong { font-weight: 600; color: var(--ink); }
 }
 
 /* ============ Coaching (one-screen statement layout) ============ */
-.block.coaching-block { padding: 48px 0 56px; }
+.block.coaching-block { padding: 32px 0 36px; }
 .coaching-inner {
   max-width: 1040px;
   text-align: left;
@@ -373,29 +368,29 @@ strong { font-weight: 600; color: var(--ink); }
 .coaching-hero {
   font-family: var(--font);
   font-weight: 800;
-  font-size: clamp(24px, 2.8vw, 36px);
+  font-size: clamp(22px, 2.4vw, 30px);
   line-height: 1.3;
   letter-spacing: -0.02em;
   color: var(--ink);
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 .coaching-lead {
-  font-size: clamp(15px, 1.15vw, 17px);
+  font-size: clamp(14.5px, 1.05vw, 16px);
   font-weight: 500;
-  line-height: 1.6;
+  line-height: 1.55;
   color: var(--ink-soft);
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   letter-spacing: -0.005em;
 }
 .coaching-points {
-  margin-bottom: 28px;
+  margin-bottom: 18px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 }
 .coaching-points li {
-  font-size: clamp(15px, 1.15vw, 17px);
-  line-height: 1.55;
+  font-size: clamp(14.5px, 1.05vw, 16px);
+  line-height: 1.5;
   font-weight: 500;
   color: var(--ink);
   letter-spacing: -0.005em;
@@ -410,52 +405,52 @@ strong { font-weight: 600; color: var(--ink); }
   font-weight: 700;
 }
 .coaching-reality {
-  margin-bottom: 28px;
+  margin-bottom: 18px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 }
 .coaching-reality p {
-  font-size: clamp(14.5px, 1.05vw, 16px);
-  line-height: 1.6;
+  font-size: clamp(14px, 1vw, 15.5px);
+  line-height: 1.55;
   color: var(--ink-soft);
   font-weight: 500;
   letter-spacing: -0.003em;
 }
 .coaching-core {
-  margin-bottom: 28px;
-  padding: 22px 28px;
+  margin-bottom: 18px;
+  padding: 16px 22px;
   background: #fff7f0;
   border-left: 4px solid var(--accent);
   border-radius: 8px;
 }
 .coaching-core-line {
-  font-size: clamp(17px, 1.5vw, 22px);
+  font-size: clamp(16px, 1.3vw, 19px);
   font-weight: 800;
   color: var(--ink);
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   letter-spacing: -0.018em;
   line-height: 1.4;
 }
 .coaching-core > p:not(.coaching-core-line) {
-  font-size: clamp(14.5px, 1.05vw, 16px);
-  line-height: 1.55;
+  font-size: clamp(14px, 1vw, 15.5px);
+  line-height: 1.5;
   color: var(--ink);
   font-weight: 500;
   letter-spacing: -0.005em;
 }
 .coaching-core > p:not(.coaching-core-line) + p {
-  margin-top: 6px;
+  margin-top: 4px;
 }
 .coaching-cta-block {
-  margin-bottom: 18px;
-  padding: 20px 0;
+  margin-bottom: 12px;
+  padding: 14px 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 18px 24px;
+  gap: 14px 24px;
 }
 .coaching-cta-h {
   font-size: 18px;
