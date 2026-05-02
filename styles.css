@@ -156,8 +156,8 @@ strong { font-weight: 600; color: var(--ink); }
   flex-wrap: wrap;
   gap: 12px;
 }
-.hero-pillars {
-  margin-top: 88px;
+.hero .hero-pillars {
+  margin-top: 180px;
 }
 .hero .pillar {
   padding: 28px 26px 26px;
@@ -684,10 +684,37 @@ strong { font-weight: 600; color: var(--ink); }
 }
 
 /* ============ Writing ============ */
+/* ============ Writing (one-screen layout) ============ */
+.block.writing-block { padding: 36px 0 44px; }
+.writing-statement {
+  margin-bottom: 22px !important;
+  font-size: clamp(18px, 1.7vw, 22px) !important;
+}
+.writing-block .writing-h {
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+.writing-block .book-list li {
+  padding: 10px 0;
+  grid-template-columns: 70px 1fr;
+  gap: 16px;
+}
+.writing-block .book-list li:first-child { padding-top: 2px; }
+.writing-block .book-list li:last-child { border-bottom: none; padding-bottom: 2px; }
+.writing-block .book-info { gap: 3px; padding-top: 0; }
+.writing-block .book-title { font-size: 16px; margin-bottom: 1px; line-height: 1.3; }
+.writing-block .book-meta { font-size: 12.5px; line-height: 1.4; }
+.writing-block .book-link { margin-top: 1px !important; font-size: 12.5px; }
+.writing-block .column-list li { padding: 9px 0; }
+.writing-block .column-list li:first-child { padding-top: 2px; }
+.writing-block .column-list li:last-child { border-bottom: none; padding-bottom: 2px; }
+.writing-block .column-outlet { font-size: 16px; margin-bottom: 1px; line-height: 1.3; }
+.writing-block .column-meta { font-size: 12.5px; line-height: 1.4; }
+
 .writing-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 72px;
+  gap: 56px;
 }
 .writing-h {
   font-family: var(--font-en);
@@ -1002,7 +1029,7 @@ strong { font-weight: 600; color: var(--ink); }
   font-family: var(--font-display);
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(28px, 3.4vw, 44px);
+  font-size: clamp(22px, 2.6vw, 34px);
   color: var(--accent);
   border-bottom: 2px solid var(--accent);
   padding-bottom: 4px;
@@ -1013,15 +1040,15 @@ strong { font-weight: 600; color: var(--ink); }
 .social-list {
   display: flex;
   justify-content: center;
-  gap: 14px;
-  margin-top: 16px;
+  gap: 22px;
+  margin-top: 24px;
 }
 .social-list a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 88px;
+  height: 88px;
   color: var(--ink);
   border: 1px solid var(--line);
   border-radius: 50%;
@@ -1034,8 +1061,8 @@ strong { font-weight: 600; color: var(--ink); }
   transform: translateY(-2px);
 }
 .social-list svg {
-  width: 19px;
-  height: 19px;
+  width: 38px;
+  height: 38px;
   display: block;
 }
 
@@ -1094,7 +1121,7 @@ strong { font-weight: 600; color: var(--ink); }
   .hero-eyebrow { margin-bottom: 24px; }
   .hero-cta { gap: 8px; }
   .cta { padding: 11px 18px; font-size: 13.5px; }
-  .hero-pillars { margin-top: 56px; }
+  .hero .hero-pillars { margin-top: 100px; }
   .block { padding: 56px 0 80px; }
   .writing-grid { grid-template-columns: 1fr; gap: 36px; }
   .book-list li { grid-template-columns: 80px 1fr; gap: 16px; }
