@@ -20,8 +20,8 @@
         <a href="#top" class="active">HOME</a>
         <a href="#experience">CAREER</a>
         <a href="#speaking">SPEAKING</a>
-        <a href="#writing">BOOKS / COLUMNS / COMMUNITY</a>
         <a href="#coaching">COACHING</a>
+        <a href="#writing">BOOKS / COLUMNS / COMMUNITY</a>
         <a href="#contact">CONTACT</a>
       </nav>
     </div>
@@ -149,6 +149,42 @@
       </div>
     </section>
 
+    <!-- ======== COACHING BANNER ======== -->
+    <section id="coaching" class="banner">
+      <div class="container">
+        <h2 class="banner-title">Coaching</h2>
+      </div>
+    </section>
+    <section class="block coaching-block">
+      <div class="container coaching-inner">
+        <h2 class="coaching-hero">“이 방향이 맞는 걸까?”라는 생각이 들 때</h2>
+        <p class="coaching-lead">많은 리더들과 중간관리자들을 만나보면 어느 순간 멈추게 되는 지점이 있습니다.</p>
+        <ul class="coaching-points">
+          <li>나에 대해 충분히 이해되지 않았을 때</li>
+          <li>생각이 언어로 정리되지 않을 때</li>
+          <li>관계 속에서 어떻게 말해야 할지 고민될 때</li>
+        </ul>
+
+        <div class="coaching-reality">
+          <p>혼자 충분히 잘 해오던 사람일수록 오히려 더 정리할 시간이 필요해집니다.</p>
+        </div>
+
+        <div class="coaching-core">
+          <p class="coaching-core-line">코칭은 답을 주는 과정이 아닙니다</p>
+          <p>흩어진 생각을 정리하고 스스로를 더 깊이 이해하도록 돕는 과정입니다.</p>
+          <p>이미 답은 그 안에 있습니다. 다만 아직 충분히 들여다보지 않았을 뿐입니다.</p>
+        </div>
+
+        <div class="coaching-cta-block">
+          <h3 class="coaching-cta-h">코칭 문의</h3>
+          <p class="coaching-cta-sub">지금의 생각을 조금 더 명확하게 정리하고 싶다면 편하게 메시지를 남겨주세요.</p>
+          <a class="cta cta-primary" href="#contact">코칭 문의하기 →</a>
+        </div>
+
+        <p class="coaching-footnote">ICF PCC · KPC · Gallup 강점코치 · 모든 세션은 1:1로 진행됩니다</p>
+      </div>
+    </section>
+
     <!-- ======== WRITING BANNER ======== -->
     <section id="writing" class="banner">
       <div class="container">
@@ -244,42 +280,6 @@
       </div>
     </section>
 
-    <!-- ======== COACHING BANNER ======== -->
-    <section id="coaching" class="banner">
-      <div class="container">
-        <h2 class="banner-title">Coaching</h2>
-      </div>
-    </section>
-    <section class="block coaching-block">
-      <div class="container coaching-inner">
-        <h2 class="coaching-hero">“이 방향이 맞는 걸까?”라는 생각이 들 때</h2>
-        <p class="coaching-lead">많은 리더들과 중간관리자들을 만나보면 어느 순간 멈추게 되는 지점이 있습니다.</p>
-        <ul class="coaching-points">
-          <li>나에 대해 충분히 이해되지 않았을 때</li>
-          <li>생각이 언어로 정리되지 않을 때</li>
-          <li>관계 속에서 어떻게 말해야 할지 고민될 때</li>
-        </ul>
-
-        <div class="coaching-reality">
-          <p>혼자 충분히 잘 해오던 사람일수록 오히려 더 정리할 시간이 필요해집니다.</p>
-        </div>
-
-        <div class="coaching-core">
-          <p class="coaching-core-line">코칭은 답을 주는 과정이 아닙니다</p>
-          <p>흩어진 생각을 정리하고 스스로를 더 깊이 이해하도록 돕는 과정입니다.</p>
-          <p>이미 답은 그 안에 있습니다. 다만 아직 충분히 들여다보지 않았을 뿐입니다.</p>
-        </div>
-
-        <div class="coaching-cta-block">
-          <h3 class="coaching-cta-h">코칭 문의</h3>
-          <p class="coaching-cta-sub">지금의 생각을 조금 더 명확하게 정리하고 싶다면 편하게 메시지를 남겨주세요.</p>
-          <a class="cta cta-primary" href="#contact">코칭 문의하기 →</a>
-        </div>
-
-        <p class="coaching-footnote">ICF PCC · KPC · Gallup 강점코치 · 모든 세션은 1:1로 진행됩니다</p>
-      </div>
-    </section>
-
     <!-- ======== CONTACT BANNER ======== -->
     <section id="contact" class="banner">
       <div class="container">
@@ -326,7 +326,7 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // Active nav state on scroll
-    const sections = ['experience','speaking','writing','coaching','contact'];
+    const sections = ['experience','speaking','coaching','writing','contact'];
     const links = Object.fromEntries(
       [...sections, 'top'].map(id => [id, document.querySelector(`.nav a[href="#${id}"]`)])
     );
