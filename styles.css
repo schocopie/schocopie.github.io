@@ -457,6 +457,45 @@ strong { font-weight: 600; color: var(--ink); }
 .coaching-core > p:not(.coaching-core-line) + p {
   margin-top: 4px;
 }
+.coaching-quotes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.coaching-quote {
+  position: relative;
+  padding: 6px 4px 4px 36px;
+  margin: 0;
+}
+.coaching-quote::before {
+  content: "\201C";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  font-family: var(--font-display);
+  font-size: 60px;
+  line-height: 1;
+  color: var(--accent);
+  font-weight: 700;
+}
+.coaching-quote p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+  margin: 0 0 6px;
+  font-style: italic;
+}
+.coaching-quote cite {
+  display: block;
+  font-style: normal;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: -0.005em;
+}
+
 .coaching-cta-block {
   margin-bottom: 12px;
   padding: 14px 0;
@@ -488,10 +527,10 @@ strong { font-weight: 600; color: var(--ink); }
   margin-left: auto;
 }
 .coaching-footnote {
-  font-size: 13px;
-  color: var(--muted);
-  line-height: 1.7;
-  letter-spacing: 0.005em;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  letter-spacing: -0.003em;
 }
 
 /* ============ About grid (Mickey-style 2 col) ============ */
@@ -964,6 +1003,14 @@ strong { font-weight: 600; color: var(--ink); }
   color: var(--accent);
   margin-left: 6px;
   letter-spacing: -0.005em;
+}
+a.column-label {
+  border-bottom: 1px solid transparent;
+  transition: border-color .15s ease, color .15s ease;
+}
+a.column-label:hover {
+  color: var(--accent-deep);
+  border-color: var(--accent-deep);
 }
 .column-meta {
   font-size: 13.5px;
