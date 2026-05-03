@@ -975,6 +975,12 @@ strong { font-weight: 600; color: var(--ink); }
   margin-bottom: 4px;
   letter-spacing: -0.012em;
 }
+.book-coauthor {
+  font-weight: 400;
+  color: var(--ink);
+  font-size: 0.85em;
+  margin-left: 4px;
+}
 .book-meta {
   font-size: 13.5px;
   color: var(--ink-soft);
