@@ -18,13 +18,14 @@
   --hero-w: 760px;
   --gutter: 24px;
 
-  /* Serif primary — book reading feel.
-     Fraunces handles Latin glyphs; Nanum Myeongjo carries Korean.
-     Pretendard kept only as ultimate fallback. */
-  --font: "Fraunces", "Nanum Myeongjo", "Gowun Batang", "Pretendard",
-          Georgia, "Apple SD Gothic Neo", serif;
-  --font-display: "Fraunces", "Nanum Myeongjo", Georgia, serif;
-  --font-myeongjo: "Nanum Myeongjo", "Gowun Batang", "Fraunces", serif;
+  /* Sans primary — Pretendard for both Latin and Korean.
+     Reduces reading fatigue compared to serif body. */
+  --font: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+          "Apple SD Gothic Neo", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+                  "Apple SD Gothic Neo", "Helvetica Neue", Arial, sans-serif;
+  --font-myeongjo: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+                   "Apple SD Gothic Neo", "Helvetica Neue", Arial, sans-serif;
   --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
                "Apple SD Gothic Neo", "Helvetica Neue", Arial, sans-serif;
 }
@@ -45,7 +46,6 @@ body {
   font-weight: 400;
   font-size: 17px;
   letter-spacing: 0;
-  font-variant-numeric: oldstyle-nums;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -129,8 +129,7 @@ strong { font-weight: 600; color: var(--ink); }
 }
 .tagline {
   font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 36px;
   line-height: 1.32;
   color: var(--ink);
@@ -140,7 +139,6 @@ strong { font-weight: 600; color: var(--ink); }
 }
 .subtitle {
   font-family: var(--font);
-  font-style: italic;
   font-size: 16px;
   line-height: 1.75;
   color: var(--ink-soft);
@@ -282,13 +280,11 @@ strong { font-weight: 600; color: var(--ink); }
 .year-inline {
   display: inline-block;
   font-family: var(--font-display);
-  font-style: italic;
   font-size: 14px;
   color: var(--muted);
   letter-spacing: 0.02em;
   width: 44px;
   margin-right: 6px;
-  font-variant-numeric: oldstyle-nums;
 }
 
 /* Career list — year/text columns */
@@ -306,12 +302,10 @@ strong { font-weight: 600; color: var(--ink); }
 .list.career li:last-child { border-bottom: 0; }
 .year {
   font-family: var(--font-display);
-  font-style: italic;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--muted);
   flex: 0 0 96px;
-  font-variant-numeric: oldstyle-nums;
 }
 .career-text {
   flex: 1;
@@ -337,7 +331,6 @@ strong { font-weight: 600; color: var(--ink); }
 
 .contact-mail {
   font-family: var(--font-display);
-  font-style: italic;
   font-size: 24px;
   margin-bottom: 6px;
   letter-spacing: -0.005em;
@@ -401,7 +394,6 @@ strong { font-weight: 600; color: var(--ink); }
 .coaching-page .container { max-width: 680px; }
 .coaching-h {
   font-family: var(--font-display);
-  font-style: italic;
   font-weight: 500;
   font-size: 38px;
   line-height: 1.35;
@@ -465,7 +457,6 @@ strong { font-weight: 600; color: var(--ink); }
 .coaching-quote {
   border-left: 2px solid var(--accent);
   padding: 6px 0 6px 20px;
-  font-style: italic;
   color: var(--ink-soft);
 }
 .coaching-quote p {
